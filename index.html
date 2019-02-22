@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="description" content="Chatbot.">
+    <meta name="author" content="Joe Ospina">
+    
+    <title>Intercom</title>
+       
+    
+ </head>
+<body>
+    <div class="init">
+        <h3>Datos del proceso</h3>
+        <form id="taquilla" >
+            <div id="div_tipo_solicitud">
+                <div class="">
+                    <label class="etiqueta">Tipo de solicitud</label>
+                </div> 
+                <div class="">                
+                    <!-- <select class="" id="tipo_solicitud" name="tipo_solicitud" >
+                            <option value="" selected>Seleccione...</option>
+                            <option value="1">MASC</option>
+                            <option value="2">Tutelas</option>
+                            <option value="3">Procesos judiciales</option>
+                            <option value="4">Procedimientos Administrativos</option>                        
+                    </select>  -->
+                    <input list="tipo_solicitud_list" id="tipo_solicitud" name="tipo_solicitud">
+                    <datalist id="tipo_solicitud_list">                        
+                    </datalist>
+                </div>           
+            </div> 
+           
+            <div>
+                <div class="">
+                    <label class="etiqueta">A&ntilde;o</label>
+                </div> 
+                <div class="">
+                    <input type="text" id="anio" name="anio">
+                </div>                 
+            </div>
+            <div id="div_radicado">
+                <div class="">
+                    <label class="etiqueta">N&uacute;mero de radicado</label>
+                </div> 
+                <div class="">
+                    <input type="text" class="numbersOnly" maxlength="5" id="radicado" name="radicado" placeholder="00000"> 
+                </div>
+            </div>
+            <div>
+                <div class="">
+                    <label class="etiqueta">Sufijo</label>
+                </div> 
+                <div class="">
+                    <input type="text" class="numbersOnly" maxlength="2" id="sufijo" name="sufijo" value="00" placeholder="00">                     
+                </div>
+            </div>
+            <div>
+                <div class="">
+                    <label class="etiqueta">N&uacute;mero de folios</label>
+                </div> 
+                <div class="">
+                    <input type="number" id="folios" name="folios" min="0" >                     
+                </div>
+            </div>
+  
+            <div>
+                <div class="">
+                    <label class="etiqueta">Fecha</label>
+                </div> 
+                <div class="">
+                    <input type="text" id="fecha" name="fecha">                     
+                </div>
+            </div>
+                      <div id="div_crear">                 
+                <div class="">
+                    <button type="button" class="">Crear Proceso</button>                     
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</body>   
+<script>
+    window.intercomSettings = {
+      app_id: "zuz9waup"
+    };
+  </script>
+  <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/zuz9waup';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>  
+</html>
